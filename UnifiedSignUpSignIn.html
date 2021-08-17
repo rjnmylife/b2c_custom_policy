@@ -393,11 +393,6 @@
             margin-top: 10px;
         }
 
-            #attributeList ul li input:focus {
-                border: none;
-                border-bottom: 1px solid #1662c7
-            }
-
             #attributeList ul li input::-webkit-input-placeholder {
                 text-indent: 20px
             }
@@ -536,7 +531,15 @@
                 height: 40px;
                 margin-top:60px;
             }
+        #attributeVerification .error{
+            font-weight: 700;
+            display: block;
+            color: indianred;
+        }
 
+        .verifying-modal{
+            display: none;
+        }
         @media screen and (max-width:100%) {
             .row .panel-default .panel-body {
                 margin-top: 40px

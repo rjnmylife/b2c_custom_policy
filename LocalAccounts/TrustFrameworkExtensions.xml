@@ -104,14 +104,14 @@
       </SupportedLanguages>
       <LocalizedResources Id="api.signuporsignin.en">
           <LocalizedStrings>
-          <LocalizedString ElementType="UxElement" StringId="local_intro_email">Welcome to the Victorian Department of Health COVID-19 vaccination booking portal. Please sign in, or if you don't have an account, sign up now.</LocalizedString>
+          <LocalizedString ElementType="UxElement" StringId="local_intro_email">Welcome to the Contoson Org of Dept COVID-19 vaccination booking portal. Please sign in, or if you don't have an account, sign up now.</LocalizedString>
           </LocalizedStrings>
       </LocalizedResources>
 
       <LocalizedResources Id="api.localaccountsignup.en">
           <LocalizedStrings>
           <LocalizedString ElementType="UxElement" StringId="initial_intro"></LocalizedString>
-          <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalAlreadyExists">The email provided is linked to multiple existing vaccination records. Please contact the Victorian Coronavirus hotline on 1800 675 398 for assistance.</LocalizedString>
+          <LocalizedString ElementType="ErrorMessage" StringId="UserMessageIfClaimsPrincipalAlreadyExists">The email provided is linked to multiple existing vaccination records. Please contact the Contoson Coronavirus hotline on 1800 675 398 for assistance.</LocalizedString>
           </LocalizedStrings>
       </LocalizedResources>
     </Localization>

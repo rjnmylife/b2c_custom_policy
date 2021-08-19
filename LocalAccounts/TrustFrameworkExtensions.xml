@@ -4,12 +4,12 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
   xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" 
   PolicySchemaVersion="0.3.0.0" 
-  TenantId="rupandemo.onmicrosoft.com" 
+  TenantId="contosodemo.onmicrosoft.com" 
   PolicyId="B2C_1A_TrustFrameworkExtensions" 
-  PublicPolicyUri="http://rupandemo.onmicrosoft.com/B2C_1A_TrustFrameworkExtensions">
+  PublicPolicyUri="http://contosodemo.onmicrosoft.com/B2C_1A_TrustFrameworkExtensions">
   
   <BasePolicy>
-    <TenantId>rupandemo.onmicrosoft.com</TenantId>
+    <TenantId>contosodemo.onmicrosoft.com</TenantId>
     <PolicyId>B2C_1A_TrustFrameworkBase</PolicyId>
   </BasePolicy>
   <BuildingBlocks>
@@ -47,7 +47,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.signuporsignin">
-        <LoadUri>https://rupandemob2cui.blob.core.windows.net/rupandemo/UnifiedSignUpSignIn.html</LoadUri>
+        <LoadUri>https://contosodemob2cui.blob.core.windows.net/contosodemo/UnifiedSignUpSignIn.html</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:unifiedssp:1.0.0</DataUri>
         <Metadata>
@@ -59,7 +59,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.selfasserted">
-        <LoadUri>https://rupandemob2cui.blob.core.windows.net/rupandemo/UnifiedSignUpSignIn.html</LoadUri>
+        <LoadUri>https://contosodemob2cui.blob.core.windows.net/contosodemo/UnifiedSignUpSignIn.html</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:selfasserted:1.1.0</DataUri>
         <Metadata>
@@ -68,7 +68,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.selfasserted.profileupdate">
-        <LoadUri>https://rupandemob2cui.blob.core.windows.net/rupandemo/UnifiedSignUpSignIn.html</LoadUri>
+        <LoadUri>https://contosodemob2cui.blob.core.windows.net/contosodemo/UnifiedSignUpSignIn.html</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:selfasserted:1.1.0</DataUri>
         <Metadata>
@@ -77,7 +77,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountsignup">
-        <LoadUri>https://rupandemob2cui.blob.core.windows.net/rupandemo/UnifiedSignUpSignIn.html</LoadUri>
+        <LoadUri>https://contosodemob2cui.blob.core.windows.net/contosodemo/UnifiedSignUpSignIn.html</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:selfasserted:1.1.0</DataUri>
         <Metadata>
@@ -89,7 +89,7 @@
       </ContentDefinition>
 
       <ContentDefinition Id="api.localaccountpasswordreset">
-        <LoadUri>https://rupandemob2cui.blob.core.windows.net/rupandemo/UnifiedSignUpSignIn.html</LoadUri>
+        <LoadUri>https://contosodemob2cui.blob.core.windows.net/contosodemo/UnifiedSignUpSignIn.html</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:selfasserted:1.1.0</DataUri>
         <Metadata>
@@ -125,12 +125,12 @@
       <TechnicalProfiles>
          <TechnicalProfile Id="login-NonInteractive">
           <Metadata>
-            <Item Key="client_id">22982db9-bc38-4a64-8bcb-688256fd5eb7</Item>
-            <Item Key="IdTokenAudience">80e0135e-2c53-44d0-bf92-327fe0709b7f</Item>
+            <Item Key="client_id">22982db9-bc38-4a64-8bcb-xxxxxxxxxxxxxx</Item>
+            <Item Key="IdTokenAudience">80e0135e-2c53-44d0-bf92-xxxxxxxxxxxxx</Item>
           </Metadata>
           <InputClaims>
-            <InputClaim ClaimTypeReferenceId="client_id" DefaultValue="22982db9-bc38-4a64-8bcb-688256fd5eb7" />
-            <InputClaim ClaimTypeReferenceId="resource_id" PartnerClaimType="resource" DefaultValue="80e0135e-2c53-44d0-bf92-327fe0709b7f" />
+            <InputClaim ClaimTypeReferenceId="client_id" DefaultValue="22982db9-bc38-4a64-8bcb-xxxxxxxxxxxxxx" />
+            <InputClaim ClaimTypeReferenceId="resource_id" PartnerClaimType="resource" DefaultValue="80e0135e-2c53-44d0-bf92-xxxxxxxxxxxxx" />
           </InputClaims>
         </TechnicalProfile>
       </TechnicalProfiles>
